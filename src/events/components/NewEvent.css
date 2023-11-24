@@ -1,0 +1,21 @@
+.event-form {
+    padding: 30px;
+}
+
+.upload-button {
+    background-color: #D9D9D9;
+    color: #2D2D2D;
+}
+
+.upload-button:visited {
+    background-color: #aba8a8;
+}
+
+.upload-button:hover {
+    background-color: #aba8a8;
+}
+
+.submit-button {
+    border-radius: 0%;
+
+}

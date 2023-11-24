@@ -1,0 +1,10 @@
+.data-input {
+    border: 1px solid #dfdddd;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.data-input:focus {
+    outline-color: #dfdddd;
+}

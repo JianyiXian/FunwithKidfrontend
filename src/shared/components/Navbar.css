@@ -1,0 +1,8 @@
+.nav-item:hover {
+    background-color: #5990D1;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: white;
+}
