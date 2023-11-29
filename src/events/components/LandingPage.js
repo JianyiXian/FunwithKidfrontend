@@ -1,7 +1,22 @@
+import { useEffect } from 'react';
 import EventItem from './EventItem';
 import './LandingPage.css'
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+    const navigate = useNavigate()
+
+    const inputHandler = e => {
+        console.log(e.target.value);
+        if (e.key === 'Enter') {
+            navigate(`/events/${e.target.value}`)
+        }
+
+
+
+
+    }
+
     return (<>
         <div className='container py-5 main-content'>
             <div className='row'>
@@ -10,22 +25,7 @@ const LandingPage = () => {
                 </div>
                 <div className='col-md-6'>
                     <h1 className='py-5 landing-title'>Find community events near you</h1>
-                    <input className='location-input' placeholder='Location' />
-                </div>
-            </div>
-            <p className='pt-5'> Events you might like</p>
-            <div className='row p-3'>
-                <div className='col-md-3'>
-                    <EventItem />
-                </div>
-                <div className='col-md-3'>
-                    <EventItem />
-                </div>
-                <div className='col-md-3'>
-                    <EventItem />
-                </div>
-                <div className='col-md-3'>
-                    <EventItem />
+                    <input className='location-input' placeholder='Enter a zipcode' name='location-input' onKeyDown={inputHandler} />
                 </div>
             </div>
 

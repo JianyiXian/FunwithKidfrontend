@@ -2,9 +2,14 @@ import MyEventItem from "./MyEventItem";
 
 
 const MyEvents = props => {
+    const deleteHandler = e => {
+        e.preventDefault();
+
+    }
+
     return (
         <>
-            <MyEventItem />
+            <MyEventItem onClickDelete={deleteHandler} />
             <MyEventItem /></>);
 }
 
